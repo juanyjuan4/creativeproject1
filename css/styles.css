@@ -1,0 +1,264 @@
+html {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.bg-dark {
+    background-color: #67337c !important;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #67337c;
+    padding: 50px 0;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.page {
+    background-color: #fff;
+    padding-bottom: 10px; /* The background wouldn't reach the footer without this */
+    box-shadow: 0 50vh 0 50vh #fff;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-img {
+    width: 100%;
+    height: 280px;
+    background-image: url('/images/pool1.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-img h1 {
+    color: #fff;
+}
+
+h2, p {
+    text-align: center;
+}
+
+p {
+    color: #5a5a5a;
+}
+
+.picture img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px 0;
+}
+
+.picture-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.home-sub {
+    padding: 20px 10px 30px 10px;
+}
+
+.home-description {
+    padding: 0 10px 30px 10px;
+}
+
+.standard-head {
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.name {
+    text-align: center;
+}
+
+.service-ob {
+    border: 2px solid #757575;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.tour-pic img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.tour-pic {
+    margin-bottom: 20px;
+}
+
+.tour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px 50px 10px;
+}
+
+.contact-text {
+    margin: 10px;
+}
+
+.contact-text li {
+    font-weight: bold;
+}
+
+/* Tablets */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+    .home-sub {
+        text-align: left;
+    }
+
+    .home-description {
+        text-align: left;
+    }
+
+    .picture-grid {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .picture {
+        width: 47%; /* Creates a good margin between the images */
+    }
+
+    .page {
+        min-height: 100%;
+        margin-bottom: -50px;
+    }
+
+    .footer,
+    .push {
+        height: 50px; /* This makes the footer stick to the bottom of the page, no matter how large the screen */
+    }
+
+    .footer {
+        align-items: center; /* For some reason, the negative margin trick I used above makes the text in the footer not centered */
+    }
+
+    .service-ob {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .tour-pic {
+        width: 80%;
+    }
+
+    .tour p {
+        margin: 0 40px;
+    }
+
+    .contact-text p {
+        width: 60%;
+        text-align: left;
+    }
+
+    .contact-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Desktops */
+@media only screen and (min-width: 961px) {
+
+    .text-page {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-sub {
+        text-align: left;
+    }
+
+    .home-description {
+        text-align: left;
+        /* width: 40%; */
+    }
+
+    .picture-grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .picture {
+        width: 49%;
+    }
+
+    .page {
+        min-height: 100%;
+        margin-bottom: -50px;
+    }
+
+    .footer,
+    .push {
+        height: 50px; /* This makes the footer stick to the bottom of the page, no matter how large the screen */
+    }
+
+    .footer {
+        align-items: center; /* For some reason, the negative margin trick I used above makes the text in the footer not centered */
+    }
+
+    .service-ob {
+        width: 80%;
+        margin: 10px auto;
+        padding: 15px 5px;
+    }
+
+    .tour {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        border: 2px solid #757575;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .tour-pic {
+        max-width: 500px;
+        margin-bottom: 0;
+    }
+
+    .tour-text {
+        width:  40%;
+    }
+
+    .contact-text {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+
+    .contact-text p {
+        width: 40%;
+    }
+}
+
